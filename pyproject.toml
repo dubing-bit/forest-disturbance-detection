@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools>=77.0.3", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "forest-disturbance-detection"
+version = "1.0.0"
+description = "Batched, memory-bounded forest disturbance mapping with temporal Transformers and prior knowledge"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "Apache-2.0"
+authors = [{name = "Bing Du"}]
+dependencies = ["numpy>=1.24", "torch>=2.1", "rasterio>=1.3"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Topic :: Scientific/Engineering :: GIS",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7", "ruff>=0.6", "build>=1"]
+
+[project.scripts]
+forest-disturbance = "forest_disturbance.cli:main"
+
+[project.urls]
+Repository = "https://github.com/dubing-bit/forest-disturbance-detection"
+Paper = "https://doi.org/10.3390/rs15122963"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F"]

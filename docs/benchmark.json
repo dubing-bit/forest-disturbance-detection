@@ -1,0 +1,42 @@
+{
+  "platform": "Windows-11-10.0.26200-SP0",
+  "processor": "13th Gen Intel(R) Core(TM) i5-13500HX",
+  "logical_cpus": 20,
+  "torch": "2.14.1+cpu",
+  "numpy": "2.5.4",
+  "device": "cpu",
+  "threads": 4,
+  "repeats": 5,
+  "checkpoint": "models/PET_NBR_W9.pth",
+  "shape_T_H_W": [
+    21,
+    24,
+    32
+  ],
+  "configuration": {
+    "window_size": 9,
+    "step": 1,
+    "batch_size": 4096,
+    "block_size": 128,
+    "start_year": 2000,
+    "scale_factor": 10000.0,
+    "min_slope": -0.05,
+    "min_intercept": 0.2,
+    "min_drop": -0.1,
+    "padding": "legacy",
+    "device": "cpu"
+  },
+  "outputs_equal": true,
+  "row_baseline_seconds": 1.0085628999986511,
+  "batched_seconds": 0.0595015000035346,
+  "mapping_speedup": 16.950209657550463,
+  "row_baseline_model_calls": 504,
+  "batched_model_calls": 4,
+  "row_baseline_neural_windows": 16128,
+  "batched_neural_windows": 1921,
+  "rules_samples": 10000,
+  "rules_scalar_seconds": 0.6055952999995498,
+  "rules_vector_seconds": 0.0015175000007729977,
+  "rules_speedup": 399.07433258060377,
+  "scope": "Synthetic in-memory CPU mapping; excludes disk I/O and checkpoint loading. No accuracy claim."
+}

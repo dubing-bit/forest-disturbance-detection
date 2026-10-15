@@ -1,0 +1,12 @@
+Forest Disturbance Detection
+Copyright 2026 Bing Du
+
+Refactored from the research source supplied for:
+Bing Du, Zhanliang Yuan, Yanchen Bo, and Yusha Zhang (2023).
+A Combined Deep Learning and Prior Knowledge Constraint Approach for Large-Scale
+Forest Disturbance Detection Using Time Series Remote Sensing Data.
+Remote Sensing 15(12), 2963. https://doi.org/10.3390/rs15122963
+
+The research paper and its reported results remain attributable to its authors.
+This software release reorganizes the code and optimizes inference. It does not
+claim independent reproduction of the published scientific accuracy.

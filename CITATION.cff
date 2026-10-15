@@ -1,0 +1,31 @@
+cff-version: 1.2.0
+message: "If you use this software in research, please cite the associated paper below."
+type: software
+title: "Forest Disturbance Detection"
+version: 1.0.0
+repository-code: "https://github.com/dubing-bit/forest-disturbance-detection"
+authors:
+  - family-names: Du
+    given-names: Bing
+license: Apache-2.0
+preferred-citation:
+  type: article
+  title: "A Combined Deep Learning and Prior Knowledge Constraint Approach for Large-Scale Forest Disturbance Detection Using Time Series Remote Sensing Data"
+  authors:
+    - family-names: Du
+      given-names: Bing
+    - family-names: Yuan
+      given-names: Zhanliang
+    - family-names: Bo
+      given-names: Yanchen
+    - family-names: Zhang
+      given-names: Yusha
+  journal: "Remote Sensing"
+  volume: "15"
+  issue: "12"
+  start: "2963"
+  year: 2023
+  month: 6
+  date-published: 2023-06-07
+  doi: "10.3390/rs15122963"
+  url: "https://www.mdpi.com/2072-4292/15/12/2963"

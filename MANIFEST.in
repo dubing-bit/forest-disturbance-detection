@@ -1,0 +1,5 @@
+include LICENSE NOTICE README.md CONTRIBUTING.md CITATION.cff
+recursive-include docs *.md *.json
+recursive-include models *.md *.pth
+recursive-include scripts *.py
+recursive-include tests *.py
